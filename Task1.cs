@@ -26,7 +26,7 @@ public class Task1 : MonoBehaviour
         Debug.Log("Course name: " + courseName + " Challenge score: " + result() + ".");
     }
 
-    private float temp(bool weight)
+    private float instruct(bool weight)
     {
         if (weight == true)
         {
@@ -38,7 +38,7 @@ public class Task1 : MonoBehaviour
         }
     }
 
-    private float ahhhh(float weight, float height)
+    private float number(float weight, float height)
     {
         return weight * height;
     }
@@ -47,11 +47,11 @@ public class Task1 : MonoBehaviour
     {
     //Inputed number will be multiplied by the factor's decimal version of the precentage
         float numberResult = 1;
-        numberResult += ahhhh(numberModules, numberModulePr);
-        numberResult += ahhhh(numberMaterials, numberMaterialsPr);
-        numberResult += ahhhh(numberQuizzes, numberQuizzesPr);
-        numberResult += ahhhh(numberAssignments, numberAssignmentsPr);
-        numberResult += temp(instructorExperience);
+        numberResult += number(numberModules, numberModulePr);
+        numberResult += number(numberMaterials, numberMaterialsPr);
+        numberResult += number(numberQuizzes, numberQuizzesPr);
+        numberResult += number(numberAssignments, numberAssignmentsPr);
+        numberResult += instruct(instructorExperience);
 
         return (int)numberResult;
 
