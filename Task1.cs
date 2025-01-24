@@ -12,7 +12,7 @@ public class Task1 : MonoBehaviour
     [Range(1f, 10f)] public float numberQuizzes;
     [Range(1f, 10f)] public float numberAssignments;
     public bool instructorExperience;
-    //Instructor experience will an if statement
+    //Instructor experience will be an if statement
     private float numberResult;
 
     private float numberModulePr = 0.15f;
@@ -20,7 +20,7 @@ public class Task1 : MonoBehaviour
     private float numberQuizzesPr = 0.15f;
     private float numberAssignmentsPr = 0.30f;
 
-    //Inputed number will be multiplied by the factor's decimal version of the precentage
+
     void Start()
     {
         Debug.Log("Course name: " + courseName + " Challenge score: " + result() + ".");
@@ -45,6 +45,7 @@ public class Task1 : MonoBehaviour
 
     private float result()
     {
+    //Inputed number will be multiplied by the factor's decimal version of the precentage
         float numberResult = 1;
         numberResult += ahhhh(numberModules, numberModulePr);
         numberResult += ahhhh(numberMaterials, numberMaterialsPr);
